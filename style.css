@@ -1,0 +1,164 @@
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	background: #0a091c;
+	color: #c3c47f;
+	font-size: 1.1em;
+	line-height: 1.4;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+h1, h2, h3 {
+	color: #77bc57;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #50ac89;
+	text-decoration: none;
+}
+a:hover {
+	color: #77bc57;
+}
+
+.btn {
+	background-color: #50ac89;
+	color: #0a091c;
+	margin-top: 10px;
+	padding: 10px 30px 10px 30px;
+	border-radius: 2px;
+	font-weight: bold;
+	text-transform: uppercase;
+	display: block;
+	clear: both;
+	width: max-content;
+}
+
+.btn:hover {
+	background: #77bc57;
+	color: #0a091c;
+}
+
+.content {
+	width: 900px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.content .logo {
+	width: 50%;
+}
+
+.time {
+	color: #77bc57;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 12px;
+}
+
+.info {
+	margin-top: 40px;
+	margin-bottom: 50px;
+	font-size: 1.6em;
+	text-align: center;
+}
+
+.details {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 30px;
+	margin-bottom: 30px;
+}
+
+.details .col {
+	flex: 1.0;
+	background: #202f42;
+	padding: 16px;
+	box-sizing: border-box;
+	border-radius: 16px;
+	border: 4px solid #50ac89;
+	box-shadow: 10px 10px #43233c;
+}
+
+.details .col .icon {
+	height: 1.5em;
+	margin-right: 4px;
+	display: inline;
+}
+
+.details .col h2 {
+	font-size: 1.4em;
+	display: inline;
+}
+
+.details .para {
+	margin-top: 10px;
+}
+
+.details .para img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.presentedby .logos {
+	text-align: center;
+}
+
+.presentedby .logos img {
+	height: 90px;
+	display: inline;
+}
+
+.land {
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	background: #43233c;
+	color: #f3eed4;
+}
+
+@media (max-width: 900px) {
+	html {
+		font-size: 0.9em;
+	}
+	.content {
+		width: 100%;
+		padding: 5%;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	.info {
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	.content .logo {
+		width: 80%;
+	}
+}
+
+@media (max-width: 600px) {
+	.details {
+		flex-direction: column;
+		margin-bottom: 0;
+		gap: 0;
+	}
+	.details .col {
+		margin-bottom: 5%;
+	}
+}
