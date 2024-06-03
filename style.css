@@ -20,6 +20,11 @@ h1, h2, h3 {
 	margin: 0;
 }
 
+h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+}
+
 a {
 	color: #50ac89;
 	text-decoration: none;
@@ -123,6 +128,10 @@ a:hover {
 .presentedby .logos img {
 	height: 90px;
 	display: inline;
+}
+
+.subscribe {
+	margin-top: 30px;
 }
 
 .land {
