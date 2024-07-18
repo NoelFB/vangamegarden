@@ -98,7 +98,7 @@ a:hover {
 	box-sizing: border-box;
 	border-radius: 16px;
 	border: 4px solid #50ac89;
-	box-shadow: 10px 10px #43233c;
+	box-shadow: 10px 10px #70175d;
 }
 
 .details .col .icon {
@@ -122,12 +122,75 @@ a:hover {
 }
 
 .presentedby .logos {
-	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .presentedby .logos img {
-	height: 70px;
-	display: inline;
+	height: 80px;
+	flex: 1.0;
+}
+
+.games {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 2px;
+	margin-top: 10px;
+}
+
+.games .entry {
+	flex-grow: 1;
+	width: 30%;
+	height: 150px;
+	position: relative;
+	overflow: hidden;
+}
+
+.games .entry .preview {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background-position: center;
+	background-size: cover;
+	transition: top 0.25s, left 0.25s, right 0.25s, bottom 0.25s;
+}
+.games .entry .fade {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	background: #37946e;
+	transition: opacity 0.25s;
+}
+
+.games .entry .title {
+	position: absolute;
+	width: 100%;
+	top:50%;
+	transform: translateY(-25%);
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	font-size: 1.5em;
+	opacity: 0.0;
+	text-transform: uppercase;
+	filter: drop-shadow(2px 2px 0px #000);
+	transition: opacity 0.25s, transform 0.25s, padding 0.2s;
+}
+
+.games .entry:hover .preview {
+	left: -2%; top: -2%; right: -2%; bottom: -2%;
+}
+.games .entry:hover .fade {
+	opacity: 0.5;
+}
+.games .entry:hover .title {
+	opacity: 1.0;
+	transform: translateY(-50%);
 }
 
 .subscribe {
@@ -138,7 +201,7 @@ a:hover {
 	text-align: center;
 	padding: 20px;
 	box-sizing: border-box;
-	background: #43233c;
+	background: #70175d;
 	color: #f3eed4;
 }
 
@@ -169,5 +232,8 @@ a:hover {
 	}
 	.details .col {
 		margin-bottom: 5%;
+	}
+	.games .entry {
+		width: 40%;
 	}
 }
