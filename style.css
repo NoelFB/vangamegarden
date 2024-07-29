@@ -36,6 +36,7 @@ a:hover {
 .btn {
 	background-color: #50ac89;
 	color: #0a091c;
+	margin: 0 auto;
 	margin-top: 10px;
 	padding: 10px 30px 10px 30px;
 	border-radius: 2px;
@@ -43,7 +44,7 @@ a:hover {
 	text-transform: uppercase;
 	display: block;
 	clear: both;
-	width: max-content;
+	max-width: fit-content;
 }
 
 .btn:hover {
@@ -112,6 +113,11 @@ a:hover {
 	display: inline;
 }
 
+.details.volunteer {
+	text-align: center;
+	width: 60%;
+}
+
 .details .para {
 	margin-top: 10px;
 }
@@ -131,6 +137,13 @@ a:hover {
 .presentedby .logos img {
 	height: 80px;
 	flex: 1.0;
+}
+
+.newsletter-info {
+	padding: 0 20px 20px 20px;
+	margin: 0;
+	background: #0a091c;
+	border-radius: 0 0 10px 10px;
 }
 
 .games {
@@ -235,5 +248,8 @@ a:hover {
 	}
 	.games .entry {
 		width: 40%;
+	}
+	.details.volunteer {
+		width: 100%;
 	}
 }
